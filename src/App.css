@@ -1,0 +1,242 @@
+.app {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: #020230;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 75%;
+    background: url("./assets/bg.jpg") center, linear-gradient(rgb(20, 19, 19), #020230);
+}
+
+.pyramid {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pyramidItem {
+    display: flex;
+    padding: 3px 10px;
+    width: 90%;
+    border-radius: 3px;
+}
+
+.pyramidItem.active {
+    background-color: teal;
+}
+
+.index {
+    margin-right: 25px;
+    width: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.money {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: start;
+}
+
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40%;
+}
+
+.timer {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+
+}
+
+.countDown {
+    height: inherit;
+    width: inherit;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.89), #020230);
+}
+
+
+.question {
+    min-height: 70px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.89), #020230);
+}
+
+.chooseOption {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.option {
+    width: 40%;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.747), #020230);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option.active {
+    background: none;
+    background-color: rgba(5, 143, 143, 0.774);
+}
+
+.option:hover {
+    background: none;
+    background-color: rgba(5, 143, 143, 0.774);
+}
+
+.option.correct {
+    animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+
+    30%,
+    50% {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.747), #020230);
+    }
+
+    20%,
+    40% {
+        background: none;
+        background-color: rgba(4, 117, 117, 0.801);
+    }
+
+    100% {
+        background: green;
+    }
+}
+
+.option.wrong {
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+
+    30%,
+    50% {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.747), #020230);
+    }
+
+    20%,
+    40% {
+        background: none;
+        background-color: rgba(4, 117, 117, 0.801);
+    }
+
+    100% {
+        background: crimson;
+    }
+}
+
+.endTextContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.endText {
+    background: linear-gradient(to bottom, rgba(31, 26, 26, 0.637), #020230);
+    color: white;
+    padding: 5px;
+}
+
+.username {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.inputUser {
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+    outline: none;
+}
+
+.submitBtn {
+    margin-top: 8px;
+    padding: 3px 5px;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: #020230;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 500px) {
+
+    .app {
+        box-sizing: border-box;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .pyramid {
+        width: 100%;
+        padding: 20px;
+        min-height: 50vh;
+    }
+
+    .pyramidItem {
+        width: 80%;
+    }
+
+    .question {
+        padding: 2px 5px;
+    }
+
+    .endText {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
