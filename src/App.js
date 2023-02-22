@@ -5,19 +5,16 @@ import React, { useEffect, useMemo, useState } from "react";
 import useSound from 'use-sound';
 import play from "./sounds/play.mp3"
 import { data } from "./assets/data";
-import Name from "./components/Name";
+import Start from "./components/Start";
 
 function App() {
   const [currentQuestionNumber, setCurrentQuestionNumber] = useState(1);
   const [amountWon, setAmountWon] = useState("0");
   const [stop, setStop] = useState(false);
-  const [userName, setUserName] = useState('');
-  const [submitUser, setSubmitUser] = useState(false);
+  const [start, setStart] = useState(false)
 
   // eslint-disable-next-line
   const [letsPlay] = useSound(play);
-
-
 
   const pyramid = useMemo(() => {
     return [
@@ -71,7 +68,7 @@ function App() {
   return (
 
     <div className="app">
-      {!submitUser ? <Name userName={userName} setUserName={setUserName} setSubmitUser={setSubmitUser} /> : (
+      {!start ? <Start setStart={setStart} /> : (
         <>
           <Main data={data} stop={stop} setStop={setStop} currentQuestionNumber={currentQuestionNumber} setCurrentQuestionNumber={setCurrentQuestionNumber} amountWon={amountWon} setAmountWon={setAmountWon} />
           <Pyramid stop={stop} setStop={setStop} pyramid={pyramid} currentQuestionNumber={currentQuestionNumber} />
