@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/quiz-app/static/media/bg.889b8ea9.jpg"
   },
   {
-    "revision": "62863c7bf41ade55f6ee84a37cd0a70f",
+    "revision": "79b47cda629c8ffd775b4259a0029842",
     "url": "/quiz-app/index.html"
   }
 ];
