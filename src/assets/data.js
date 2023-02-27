@@ -1,22 +1,22 @@
 export const data = [
     {
         id: 1,
-        question: "ISRO is the space research center of which country?",
+        question: "Grand Central Terminal, Park Avenue, New York is the world's",
         options: [
             {
-                Option: "America",
-                correct: false
-            },
-            {
-                Option: "Russia",
-                correct: false
-            },
-            {
-                Option: "India",
+                Option: "largest railway station",
                 correct: true
             },
             {
-                Option: "China",
+                Option: "highest railway station",
+                correct: false
+            },
+            {
+                Option: "longest railway station",
+                correct: false
+            },
+            {
+                Option: "None of the these",
                 correct: false
             }
         ]
@@ -307,28 +307,28 @@ export const data = [
             }
         ]
     },
-    // {
-    //     id: 15,
-    //     question: "What discovery in 1823 is credited to the British official Robert Bruce?",
-    //     options: [
-    //         {
-    //             Option: "Oil",
-    //             correct: false
-    //         },
-    //         {
-    //             Option: "Oil",
-    //             correct: true
-    //         },
-    //         {
-    //             Option: "Murga silk",
-    //             correct: false
-    //         },
-    //         {
-    //             Option: "Jute",
-    //             correct: false
-    //         }
-    //     ]
-    // },
+    {
+        id: 15,
+        question: "What discovered in Assam in 1823, is credited to the British official Robert Bruce ?",
+        options: [
+            {
+                Option: "Oil",
+                correct: false
+            },
+            {
+                Option: "Tea",
+                correct: true
+            },
+            {
+                Option: "Murga silk",
+                correct: false
+            },
+            {
+                Option: "Jute",
+                correct: false
+            }
+        ]
+    },
     {
         id: 16,
         question: " The International Literacy Day is observed on",
@@ -378,19 +378,19 @@ export const data = [
         question: "In which group of places the Kumbha Mela is held every twelve years?",
         options: [
             {
-                Option: "Ujjain. Purl; Prayag. Haridwar",
+                Option: "Ujjain, Purl, Prayag, Haridwar",
                 correct: false
             },
             {
-                Option: "Prayag. Haridwar, Ujjain,. Nasik",
+                Option: "Prayag, Haridwar, Ujjain, Nasik",
                 correct: true
             },
             {
-                Option: "Rameshwaram. Purl, Badrinath. Dwarika",
+                Option: "Rameshwaram, Purl, Badrinath, Dwarika",
                 correct: false
             },
             {
-                Option: "Chittakoot, Ujjain, Prayag,'Haridwar",
+                Option: "Chittakoot, Ujjain, Prayag, Haridwar",
                 correct: false
             }
         ]
@@ -642,19 +642,19 @@ export const data = [
         question: "Good Friday' is observed to commemorate the event of",
         options: [
             {
-                Option: "birth of Jesus Christ",
+                Option: "Birth of Jesus Christ",
                 correct: false
             },
             {
-                Option: "birth of' St. Peter",
+                Option: "Birth of' St. Peter",
                 correct: false
             },
             {
-                Option: "crucification 'of Jesus Christ",
+                Option: "Crucification 'of Jesus Christ",
                 correct: true
             },
             {
-                Option: "rebirth of Jesus Christ",
+                Option: "Rebirth of Jesus Christ",
                 correct: false
             }
         ]
